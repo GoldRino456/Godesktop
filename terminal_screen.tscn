@@ -1,0 +1,443 @@
+[gd_scene format=3 uid="uid://qcq2cjqt5yt"]
+
+[ext_resource type="Texture2D" uid="uid://m0mrkc00yrgx" path="res://assets/icon.svg" id="1_rqjei"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_phgew"]
+bg_color = Color(0, 0, 0, 0.5882353)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.16862746)
+shadow_size = 7
+shadow_offset = Vector2(0, 3)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1jmin"]
+bg_color = Color(0.25565878, 0.2556588, 0.2556587, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1jmin"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w1gfe"]
+bg_color = Color(0, 0, 0, 0.5882353)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqjei"]
+
+[node name="TerminalScreen" type="Control" unique_id=696199841]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=414016281]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Desktop" type="Control" parent="VBoxContainer" unique_id=110901705]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/Desktop" unique_id=1025473271]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.37005875, 0.1261451, 0.49284923, 1)
+
+[node name="Interactables" type="MarginContainer" parent="VBoxContainer/Desktop" unique_id=1756595829]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="Columns" type="HBoxContainer" parent="VBoxContainer/Desktop/Interactables" unique_id=959200465]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Column1" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns" unique_id=563567045]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Interactable1" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column1" unique_id=1769531690]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable1" unique_id=2082945997]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable1" unique_id=1979893337]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Interactable2" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column1" unique_id=703248642]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable2" unique_id=2095978950]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable2" unique_id=2136288133]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Interactable3" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column1" unique_id=78436514]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable3" unique_id=1812212427]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable3" unique_id=1284684793]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Interactable4" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column1" unique_id=1644282028]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable4" unique_id=2114715303]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable4" unique_id=242851457]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Interactable5" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column1" unique_id=570653576]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable5" unique_id=2025508647]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable5" unique_id=525413475]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Interactable6" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column1" unique_id=2065036715]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable6" unique_id=1092805183]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column1/Interactable6" unique_id=2061764784]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Column2" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns" unique_id=2066595818]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Interactable1" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column2" unique_id=1699329927]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column2/Interactable1" unique_id=2112160048]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column2/Interactable1" unique_id=1610055194]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Interactable2" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column2" unique_id=1470889663]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column2/Interactable2" unique_id=1542928897]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column2/Interactable2" unique_id=2107853986]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Interactable3" type="VBoxContainer" parent="VBoxContainer/Desktop/Interactables/Columns/Column2" unique_id=153665195]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Desktop/Interactables/Columns/Column2/Interactable3" unique_id=1584144610]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_rqjei")
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/Interactables/Columns/Column2/Interactable3" unique_id=239155768]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="AppWindows" type="Control" parent="VBoxContainer/Desktop" unique_id=1783653539]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="App1" type="PanelContainer" parent="VBoxContainer/Desktop/AppWindows" unique_id=442590027]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 295.0
+offset_top = 196.0
+offset_right = 1002.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_phgew")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Desktop/AppWindows/App1" unique_id=1812030227]
+layout_mode = 2
+
+[node name="Navigation" type="Panel" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer" unique_id=159113545]
+custom_maximum_size = Vector2(-1, 25)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_1jmin")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation" unique_id=2037422621]
+custom_maximum_size = Vector2(-1, 21.5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -74.0
+offset_top = -11.0
+offset_right = -3.0
+offset_bottom = 10.5
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Minimize" type="TextureButton" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation/HBoxContainer" unique_id=2067094317]
+custom_maximum_size = Vector2(21, 21)
+layout_mode = 2
+texture_normal = ExtResource("1_rqjei")
+stretch_mode = 5
+
+[node name="Maximize" type="TextureButton" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation/HBoxContainer" unique_id=2125590131]
+custom_maximum_size = Vector2(21, 21)
+layout_mode = 2
+texture_normal = ExtResource("1_rqjei")
+stretch_mode = 5
+
+[node name="Close" type="TextureButton" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation/HBoxContainer" unique_id=322466899]
+custom_maximum_size = Vector2(21, 21)
+layout_mode = 2
+texture_normal = ExtResource("1_rqjei")
+stretch_mode = 5
+
+[node name="AppWindow" type="MarginContainer" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer" unique_id=908958684]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/AppWindow" unique_id=2048776954]
+layout_mode = 2
+
+[node name="Toolbar" type="Control" parent="VBoxContainer" unique_id=1078554962]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/Toolbar" unique_id=2039306131]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4045111, 0.40451115, 0.4045111, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Toolbar" unique_id=1661617951]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="MainToolbar" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer" unique_id=1230071998]
+layout_mode = 2
+
+[node name="Menu" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar" unique_id=2064543015]
+custom_minimum_size = Vector2(60, 0)
+custom_maximum_size = Vector2(60, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Shortcuts" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar" unique_id=14517288]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=412558870]
+custom_minimum_size = Vector2(60, 0)
+custom_maximum_size = Vector2(60, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=325458555]
+custom_minimum_size = Vector2(60, 0)
+custom_maximum_size = Vector2(60, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button3" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=356144592]
+custom_minimum_size = Vector2(60, 0)
+custom_maximum_size = Vector2(60, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button4" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=676911415]
+custom_minimum_size = Vector2(60, 0)
+custom_maximum_size = Vector2(60, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ActiveApps" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar" unique_id=1730071998]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/ActiveApps" unique_id=2051548323]
+custom_minimum_size = Vector2(60, 0)
+custom_maximum_size = Vector2(60, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_w1gfe")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Footer" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer" unique_id=284342231]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 2
+
+[node name="StatusIcons" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer/Footer" unique_id=1866291662]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 2
+
+[node name="TrayIcon" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/Footer/StatusIcons" unique_id=531470103]
+custom_minimum_size = Vector2(20, 0)
+custom_maximum_size = Vector2(30, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rqjei")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="TrayIcon2" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/Footer/StatusIcons" unique_id=1482596171]
+custom_minimum_size = Vector2(20, 0)
+custom_maximum_size = Vector2(30, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rqjei")
+icon = ExtResource("1_rqjei")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Time" type="Label" parent="VBoxContainer/Toolbar/MarginContainer/Footer" unique_id=1405272913]
+layout_mode = 2
+text = "19:23"
+horizontal_alignment = 1
+vertical_alignment = 1
