@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://qcq2cjqt5yt"]
 
+[ext_resource type="Script" uid="uid://ckf7ptrjyqeb7" path="res://src/GodesktopAppManager.cs" id="1_1jmin"]
 [ext_resource type="Texture2D" uid="uid://m0mrkc00yrgx" path="res://assets/icon.svg" id="1_rqjei"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_phgew"]
@@ -29,6 +30,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_1jmin")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=414016281]
 layout_mode = 1
