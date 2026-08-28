@@ -6,6 +6,10 @@
 export.cfg
 export_presets.cfg
 
+# .NET ignores
+*.csproj
+*.sln
+
 # Imported translations (automatically generated from CSV files)
 *.translation
 
