@@ -16,10 +16,9 @@ anti_aliasing = false
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1jmin"]
 bg_color = Color(0.25565878, 0.2556588, 0.2556587, 1)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1jmin"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phgew"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w1gfe"]
-bg_color = Color(0, 0, 0, 0.5882353)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1jmin"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqjei"]
 
@@ -266,6 +265,30 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_1jmin")
 
+[node name="AppInfo" type="HBoxContainer" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation" unique_id=1931223974]
+custom_maximum_size = Vector2(-1, 21.5)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -10.75
+offset_right = 71.0
+offset_bottom = 10.75
+grow_vertical = 2
+
+[node name="AppIcon" type="TextureRect" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation/AppInfo" unique_id=1265062047]
+layout_mode = 2
+texture = ExtResource("1_rqjei")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation/AppInfo" unique_id=497667351]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "AppName"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Desktop/AppWindows/App1/VBoxContainer/Navigation" unique_id=2037422621]
 custom_maximum_size = Vector2(-1, 21.5)
 layout_mode = 1
@@ -332,19 +355,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 5
-theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
-theme_override_constants/margin_bottom = 5
 
 [node name="MainToolbar" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer" unique_id=1230071998]
 layout_mode = 2
 
-[node name="Menu" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar" unique_id=2064543015]
+[node name="Settings" type="PanelContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar" unique_id=616986119]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_phgew")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Settings" unique_id=891867940]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Settings/MarginContainer" unique_id=1510630307]
 custom_minimum_size = Vector2(60, 0)
 custom_maximum_size = Vector2(60, -1)
 layout_mode = 2
 size_flags_horizontal = 0
-theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
 icon = ExtResource("1_rqjei")
 icon_alignment = 1
@@ -353,7 +382,16 @@ expand_icon = true
 [node name="Shortcuts" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar" unique_id=14517288]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=412558870]
+[node name="AppShortcut1" type="PanelContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=798081642]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_phgew")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut1" unique_id=567482453]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut1/MarginContainer" unique_id=412558870]
 custom_minimum_size = Vector2(60, 0)
 custom_maximum_size = Vector2(60, -1)
 layout_mode = 2
@@ -363,7 +401,16 @@ icon = ExtResource("1_rqjei")
 icon_alignment = 1
 expand_icon = true
 
-[node name="Button2" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=325458555]
+[node name="AppShortcut2" type="PanelContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=1420021402]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_phgew")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut2" unique_id=59544722]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut2/MarginContainer" unique_id=8456101]
 custom_minimum_size = Vector2(60, 0)
 custom_maximum_size = Vector2(60, -1)
 layout_mode = 2
@@ -373,7 +420,16 @@ icon = ExtResource("1_rqjei")
 icon_alignment = 1
 expand_icon = true
 
-[node name="Button3" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=356144592]
+[node name="AppShortcut3" type="PanelContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=283329296]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_phgew")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut3" unique_id=1895216664]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut3/MarginContainer" unique_id=1907890999]
 custom_minimum_size = Vector2(60, 0)
 custom_maximum_size = Vector2(60, -1)
 layout_mode = 2
@@ -383,7 +439,16 @@ icon = ExtResource("1_rqjei")
 icon_alignment = 1
 expand_icon = true
 
-[node name="Button4" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=676911415]
+[node name="AppShortcut4" type="PanelContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts" unique_id=690848511]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_phgew")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut4" unique_id=850093520]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/Shortcuts/AppShortcut4/MarginContainer" unique_id=1977878160]
 custom_minimum_size = Vector2(60, 0)
 custom_maximum_size = Vector2(60, -1)
 layout_mode = 2
@@ -396,12 +461,20 @@ expand_icon = true
 [node name="ActiveApps" type="HBoxContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar" unique_id=1730071998]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/ActiveApps" unique_id=2051548323]
+[node name="AppShortcut5" type="PanelContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/ActiveApps" unique_id=256611607]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/ActiveApps/AppShortcut5" unique_id=1340819184]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/Toolbar/MarginContainer/MainToolbar/ActiveApps/AppShortcut5/MarginContainer" unique_id=1390732689]
 custom_minimum_size = Vector2(60, 0)
 custom_maximum_size = Vector2(60, -1)
 layout_mode = 2
 size_flags_horizontal = 0
-theme_override_styles/normal = SubResource("StyleBoxFlat_w1gfe")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
 icon = ExtResource("1_rqjei")
 icon_alignment = 1
 expand_icon = true
