@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dh41g1um1w6hf"]
+
+[ext_resource type="Texture2D" uid="uid://m0mrkc00yrgx" path="res://assets/icon.svg" id="1_m2c4t"]
+
+[node name="app_desktop" type="VBoxContainer" unique_id=1570557019]
+offset_right = 96.0
+offset_bottom = 125.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Icon" type="TextureRect" parent="." unique_id=355807068]
+custom_maximum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_m2c4t")
+
+[node name="Label" type="Label" parent="." unique_id=1555087099]
+custom_minimum_size = Vector2(32, 25)
+custom_maximum_size = Vector2(128, 50)
+layout_mode = 2
+text = "AppName"
+horizontal_alignment = 1
+autowrap_mode = 3

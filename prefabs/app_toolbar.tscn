@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b07ef8u2g6or0"]
+
+[ext_resource type="Texture2D" uid="uid://m0mrkc00yrgx" path="res://assets/icon.svg" id="1_4mjwy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phgew"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1jmin"]
+
+[node name="AppShortcut1" type="PanelContainer" unique_id=259525462]
+theme_override_styles/panel = SubResource("StyleBoxEmpty_phgew")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1593998944]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Button" type="Button" parent="MarginContainer" unique_id=557679314]
+custom_minimum_size = Vector2(60, 0)
+custom_maximum_size = Vector2(60, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1jmin")
+icon = ExtResource("1_4mjwy")
+icon_alignment = 1
+expand_icon = true
